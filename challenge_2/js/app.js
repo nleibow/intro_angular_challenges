@@ -17,11 +17,14 @@ function WelcomeController(){
 app.controller("SecondController", SecondController);
 
 function SecondController(){
+	let self = this
 	this.class_name = "WDI"
 	this.enrolled_students = 10
 	this.start_date = new Date(2016, 10, 31);
 	this.end_date = new Date(2017, 2, 3);
-	daysRemaining()
-	function daysRemaining(){
+	this.daysRemaining = function(){
+		return this.start_date - this.end_date}
+		
+	
 		
 }

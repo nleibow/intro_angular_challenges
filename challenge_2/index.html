@@ -107,11 +107,11 @@ function WelcomeController(){
       <p>Describe your WDI class:</p>
       <ol>
         <li>Class Name: {{ secs.class_name }}</li>
-        <li>Students: {{ "enrolled_students" }}</li>
+        <li>Students: {{ secs.enrolled_students }}</li>
         <li>Start: {{ secs.start_date }}</li>
         <li>End: {{ secs.end_date }}</li>
         <!-- HINT: Create a daysRemaining() function in your controller that calculate this -->
-        <li>Days Left: {{ "daysRemaining()" }}</li>
+        <li>Days Left: {{ secs.daysRemaining() }}</li>
       </ol>
     </section>
   </div>
